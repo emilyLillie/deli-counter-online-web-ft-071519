@@ -16,3 +16,14 @@ def take_a_number(katz_deli, name)
  end
  
  def line(katz_deli)
+   if katz_deli.length == 0
+     puts "The line is currently empty."
+   else
+     line_spot = "The line is currently:"
+
+      katz_deli.each_with_index do |value, index|
+       line_spot += " #{index.to_i + 1}. #{value}"
+     end
+      puts "#{line_spot}"
+   end
+  end
