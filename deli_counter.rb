@@ -14,3 +14,5 @@ def take_a_number(katz_deli, name)
      puts "Currently serving #{katz_deli.shift}."
    end
  end
+ 
+ def line(katz_deli)
